@@ -5,6 +5,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .header__logo {
   align-self: center;
@@ -86,4 +87,71 @@
   font-weight: 700;
   color: rgba(51,51,51,255);
   text-decoration: none;
+}
+/*Main*/
+.main {
+  height: 640px;
+  background: url(img/main/picture2.png) no-repeat;
+}
+.main__row {
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__heading {
+ 
+}
+.main__heading > h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: rgba(51,51,51,255);
+}
+.main__price {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(51,51,51,255);
+}
+.main__advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.main__features {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0, 150, 220, 255);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.main__features img {
+display: inline-block;
+width: 40px;
+height: 40px;
+vertical-align: bottom;
+position: absolute;
+top: -15px;
+}
+.main__feature {
+  display: block;
+  width: 70px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main__form {
+  width: 370px;
+  height: 440px;
+  background-color: #fff;
+  border-radius: 5%;
+}
+/*Selection glazing*/
+.selection {
+  height: 300px;
 }

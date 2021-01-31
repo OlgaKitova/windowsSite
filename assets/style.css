@@ -200,6 +200,7 @@ font-weight: 700;
 /*Selection glazing*/
 .selection {
   margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 .selection__caption {
@@ -361,4 +362,89 @@ font-weight: 700;
 background-color: rgb(232,232,232);
 border-radius: 5%;
 margin-left: 40px;
+}
+/*Show/hide variable window*/
+.selection__parent {
+  position: relative;
+}
+.selection__aluminium {
+  position: absolute;
+  display: none;
+}
+.selection__plastic {
+   position: absolute;
+   display: none;
+}
+.selection__french {
+   position: absolute;
+   display: none;
+}
+.selection__rise {
+   position: absolute;
+   display: none;
+}
+
+/*Decoration*/
+.decoration {
+  padding-top: 80px;
+  position: relative;
+  background-color: rgb(247,247,247);
+}
+.decoration__line {
+  position: absolute;
+}
+.decoration__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.decoration__wrapper a {
+  display: block;
+  margin-top: 30px;
+  color: rgb(66,66,66);
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+   margin-bottom: 130px;
+}
+.decoration__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decoration__trim {
+  margin-top: 30px;
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.decoration__option {
+ margin-right: 50px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.decoration__option img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.decoration__option h3 {
+  display: block;
+  width: 90px;
+  font-weight: 700;
+  text-align: center;
+  flex-basis: 30px;
+  flex-grow: 1;
+}
+.decoration__price {
+  color: rgb(13,143,227);
+  font-weight: 700;
+}
+.decoration__material {
+  font-size: 12px;
 }

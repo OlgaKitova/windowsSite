@@ -214,7 +214,7 @@ font-weight: 700;
 .selection__caption::after {
   content: "";
   display: block;
-  width: 1200px;
+  width: 1170px;
   height: 2px;
   background-image: url(img/glazing/line.png);
   background-repeat: no-repeat;
@@ -456,6 +456,7 @@ margin-left: 40px;
 .photowork {
   width: 1290px;
   margin: 0 auto;
+  margin-bottom: 54px;
 }
 .photowork__caption {
   display: block;
@@ -545,4 +546,204 @@ z-index: 2;
    left: 900px;
    top: 307px;
   z-index: 7;
+}
+/*Guarantee*/
+.guarantee {
+  padding-top: 80px;
+  height: 650px;
+  background-color: rgb(9,150,200);
+  margin-bottom: 60px;
+}
+.guarantee_caption {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-bottom: 75px;
+}
+.guarantee_caption::after {
+  content: "";
+  display: block;
+  width: 1170px;
+  height: 2px;
+  background-image: url(img/guarantee/guar_line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+.guarantee__wrapper {
+  height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.guarantee__feauture {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.guarantee__feauture img {
+  display: block;
+  height: 70px;
+}
+.guarantee__feauture p {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 25px;
+}
+/*Payment*/
+.payment {
+  margin-bottom: 90px;
+}
+.payment__caption {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  margin-bottom: 90px;
+}
+.payment__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.payment__pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment__pay img {
+  display: block;
+margin-right: 30px;
+}
+.payment__pay p {
+line-height: 1.5;
+font-size: 18px;
+}
+/*Action*/
+.action {
+  height: 600px;
+  background: url(img/sale/mg.png) no-repeat;
+  margin-bottom: 80px;
+}
+.action__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.action__column1 {
+margin-top: 85px;
+}
+.action__caption {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: rgb(0,140,206);
+  margin-bottom: 90px;
+}
+.action__column1 > p {
+color: rgb(66,66,66);
+font-size: 26px;
+line-height: 1.5em;
+}
+.action__wrap {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   width: 260px;
+  height: 160px;
+  background-color:rgb(255,255,255);
+  border-radius: 5%;
+}
+.action__wrap h4 {
+margin-top: 20px;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-weight: 700;
+}
+.action__counter {
+  display: flex;
+}
+.action__days span,
+.action__hour span,
+.action__minutes span,
+.action__seconds span {
+position: relative;
+display: block;
+width: 40px;
+height: 50px;
+background-color: rgba(51,52,52);
+color: rgb(255,255,255);
+border-radius: 25%;
+box-shadow: 0 0 10px rgb(51,51,51);
+margin-right: 17px;
+text-align: center;
+padding-top: 17px;
+font-weight: 700;
+font-size: 16px;
+z-index: 2;
+}
+.action__days span::after,
+.action__hour span::after,
+.action__minutes span::after,
+.action__seconds span::after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: rgb(0,0,0);
+  position: absolute;
+  top: 25px;
+  z-index: -1;
+}
+.action__days p,
+.action__hour p,
+.action__minutes p,
+.action__seconds p {
+  display: block;
+  margin-top: 17px;
+}
+
+.action__column2 {
+margin-top: 80px;
+}
+/*Contacts*/
+.contacts {
+  margin-bottom: 80px;
+}
+.contacts__wrapper {
+  display: flex;
+}
+.contacts__map {
+width: 570px;
+height: 450px;
+background-color: rgb(218,218,218);
+margin-right: 130px;
+}
+.contacts__address {
+  width: 425px;
+  margin-right: 60px;
+}
+.contacts__address ul li {
+margin-bottom: 45px;
+}
+.contacts__address--blue {
+  color: rgb(0,140,206);
+  font-weight: 700;
+  line-height: 2em;
+}
+.contacts__address--black {
+  font-weight: 700;
+  font-size: 16px;
+}
+.contacts__address--black span {
+  color: rgb(136,136,136);
 }

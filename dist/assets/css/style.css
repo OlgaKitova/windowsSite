@@ -1,6 +1,16 @@
+/*Active/hide*/
+.active {
+visibility: visible;
+transition: visibility 0.3s ease-in;
+}
+.hide {
+visibility: hidden;
+transition: visibility 0.1s ease-in;
+}
 
 /*header*/
 .header__row {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   margin-top: 2rem;
@@ -44,7 +54,30 @@
   font-weight: 700;
   text-align: left;
 }
- 
+.popup__mainForm {
+width: 1200px;
+height: 1000px;
+position: absolute;
+padding: 100px 400px;
+z-index: 2;
+}
+ .popup__close {
+margin-bottom: 1rem;
+margin-left: 26rem;
+display: block;
+width: 20px;
+height: 3px;
+background-color: rgb(255, 255, 255);
+transform: rotate(45deg);
+}
+.popup__close::after {
+display: block;
+content: "";
+width: 20px;
+height: 3px;
+background-color: rgb(255, 255, 255);
+transform: rotate(90deg); 
+}
 .header__time {
   align-items: center;
   width: 150px;
@@ -106,7 +139,7 @@
 .main {
   width: inherit;
   height: 640px;
-  background: url(img/main/picture2.png) 0 0 no-repeat;
+  background: url(../img/main/picture2.png) 0 0 no-repeat;
   background-size: cover;
 }
 .main__row {
@@ -239,7 +272,7 @@ box-shadow: 0 0 10px rgb(206, 142, 46);
   display: block;
   width: 1170px;
   height: 2px;
-  background-image: url(img/glazing/line.png);
+  background-image: url(../img/glazing/line.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 1.8rem;
@@ -286,7 +319,7 @@ margin-bottom: 30px;
   content: "";
   width: 585px;
   height: 10px;
-  background-image: url(img/glazing/warmcold/line_cold.png);
+  background-image: url(../img/glazing/warmcold/line_cold.png);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -310,7 +343,7 @@ margin-bottom: 30px;
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url(img/glazing/warmcold/check.png);
+  background-image: url(../img/glazing/warmcold/check.png);
   background-repeat: no-repeat;
   left: -50px;
   top: -5px;
@@ -334,7 +367,7 @@ margin-bottom: 30px;
   content: "";
   width: 585px;
   height: 10px;
-  background-image: url(img/glazing/warmcold/warmLine.png);
+  background-image: url(../img/glazing/warmcold/warmLine.png);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -357,7 +390,7 @@ margin-bottom: 30px;
 content: "";
 width: 30px;
 height: 30px;
-background-image: url(img/glazing/warmcold/check.png);
+background-image: url(../img/glazing/warmcold/check.png);
 background-repeat: no-repeat;
 left: -50px;
 top: -5px;
@@ -499,7 +532,7 @@ margin-left: 40px;
   display: block;
   width: 1290px;
   height: 2px;
-  background-image: url(img/glazing/line.png);
+  background-image: url(../img/glazing/line.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px;
@@ -596,7 +629,7 @@ z-index: 2;
   display: block;
   width: 1170px;
   height: 2px;
-  background-image: url(img/guarantee/guar_line.png);
+  background-image: url(../img/guarantee/guar_line.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px;
@@ -659,7 +692,7 @@ font-size: 18px;
 /*Action*/
 .action {
   height: 600px;
-  background: url(img/sale/mg.png) no-repeat;
+  background: url(../img/sale/mg.png) no-repeat;
   margin-bottom: 80px;
 }
 .action__wrapper {
